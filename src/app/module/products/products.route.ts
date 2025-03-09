@@ -11,4 +11,12 @@ router.get('/', StationaryProductController.getAllProducts);
 router.get('/:productId', StationaryProductController.getSingleProduct);
 
 
+
+router.delete('/:productId', StationaryProductController.deleteProduct);
+
+
+router.put("/:Id", StationaryProductController.updateProduct);
+
+
+
 export const productRoute = router;
